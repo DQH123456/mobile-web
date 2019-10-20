@@ -11,7 +11,7 @@ class ToDoItem extends Component {
         return (<div className={'ToDoItem' + (this.props.item.status === 'finished' ? ' ToDoItem-finish' : '')}>
            <input type="checkbox" onChange={this.checkboxCheck} checked={this.props.item.status === 'finished'} ></input>
            <p>{this.props.item.text}</p>
-           <span onClick={this.clickDelete}>-</span> 
+           <span onClick={this.clickDelete}>删除</span> 
         </div>)
     }
 }
