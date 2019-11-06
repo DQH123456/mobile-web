@@ -1,0 +1,21 @@
+.ToDoItem{
+    height: 32px;
+    line-height: 32px;
+    background: #CCC;
+    position: relative;
+    margin-bottom: 10px;
+    padding: 0 45px;
+}
+
+.ToDoItem input{
+    position: absolute;
+    top: 2px;
+    left: 10px;
+    width: 22px;
+    height: 22px;
+}
+.ToDoItem span{
+    position: absolute;
+    top: 2px;
+    right: 5px;
+}
