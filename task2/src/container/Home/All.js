@@ -6,7 +6,6 @@ export default class All extends Component {
         super();
         this.state={
             data:[],
-            pages:[1,2,3,4,5,6,7,8,9,10]
         }
     }
     componentDidMount(){
@@ -40,18 +39,8 @@ export default class All extends Component {
     render() {
         return (
             <div>
-                <div className='change'>
-                    {
-                        this.state.pages.map((item,idx)=>(
-                            <li num={item} onClick={()=>this.pgchange(item)}>
-                                {item}
-                            </li>    
-                            
-                        ))
-                    } 
-                </div>
                 <div>
-                    {this.state.data.map((item,idx)=>(
+                {this.state.data.map((item,idx)=>(
                             <ul className='mingzi'>
                                 <li num="item">
                                 <img src={item.author.avatar_url} alt=""
@@ -66,13 +55,24 @@ export default class All extends Component {
                                     <div dangerouslySetInnerHTML={{__html:item.title}} 
                                         style={{width:650,height:'40px',paddingTop:'12px',float:'left',overflow:'hidden',fontWeight:'bold',fontSize:16}}></div>
                                 </Link>
-                                <img src="https://avatars2.githubusercontent.com/u/227713?v=4&s=120" alt="" 
+                                <img src="https://avatars2.githubusercontent.com/u/227713?v=4&s=120"
                                     style={{float:'left',width:20,height:20}}/>
                                 <div dangerouslySetInnerHTML={{__html:'2天前'}} 
                                     style={{width:65,float:'left',height:40}}></div>
                                 </li>
                             </ul>
-                    ))}           
+                    ))}      
+                </div>
+                <div className='change'>
+                <ul>
+                        {
+                            [1,2,3,4,5,6,7,8,9,10].map((item)=>
+                                <li  onClick={()=>{return this.handleclick(item)}}>
+                                    <a>{item}</a>
+                                </li>
+                            )
+                        }
+                    </ul>
                 </div>
             </div>
         )

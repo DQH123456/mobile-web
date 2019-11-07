@@ -46,12 +46,15 @@
     float: left;
 }
 .right{
-    margin-top: 50px;
-    width: 300px;
     float: right;
-    height: 380px;
+    margin-top: 50px;
+    width: 280px;
+    height: 400px;
     border:2px solid gray;
     text-align: center;
+}
+.right img{
+    width: 270px;
 }
 .bottom{
     float: left;
@@ -64,7 +67,8 @@
 .mingzi{
     list-style:none;
 }
-.all{margin-top: 30px;
+.all{
+    margin-top: 30px;
     margin-left: 20px;
     background-color: #fff;
     border-radius:20px;
@@ -86,6 +90,7 @@
     display:inline
 }
 .change{
+    
     position:absolute;
     text-align: center;
     display:inline;
@@ -94,9 +99,11 @@
     list-style-type:none;
 }
 .change li{
+    
+    list-style:none;
     border:1px solid gray;
     float: left;
-    width: 30px;
+    width: 45px;
     height: 30px;
     padding-top: 7px;
     margin-bottom: 10px;

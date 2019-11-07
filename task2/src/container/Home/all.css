@@ -1,0 +1,50 @@
+.tat{
+    float:'left';
+    width:30;
+    height:30
+}
+.tbt{
+    float:'left';
+    width:40;
+    height:'40px';
+    padding-top:10,
+}
+.tct{
+    width:650;
+    height:'40px';
+    padding-Top:'12px';
+    float:'left';
+    overflow:'hidden';
+    font-Weight:'bold';
+    font-Size:16
+}
+
+
+
+
+                    /* {this.state.data.map((item,idx)=>(
+                            <ul className='mingzi'>
+                                <li num="item">
+                                <img src={item.author.avatar_url} alt=""
+                                className='tat'/>
+                                <div dangerouslySetInnerHTML={{__html:item.reply_count+'/'}} 
+                                className='tbt'
+                                    style={{fontSize:16,textAlign:'center'}}></div>
+                                <div dangerouslySetInnerHTML={{__html:item.visit_count}} 
+                                className='tbt'></div>
+                                <div dangerouslySetInnerHTML={{__html:item.tab}} 
+                                className='tbt'></div>
+                                <Link to={`/detail/`+item.id}>
+                                    <div dangerouslySetInnerHTML={{__html:item.title}} 
+                                    className='tct'></div>
+                                </Link>
+                                <img src="https://avatars2.githubusercontent.com/u/227713?v=4&s=120" alt="" 
+                                    style={{float:'left',width:20,height:20}}/>
+                                <div dangerouslySetInnerHTML={{__html:'2天前'}} 
+                                    style={{width:65,float:'left',height:40}}></div>
+                                </li>
+                            </ul>
+                    ))}           
+                </div> */
+
+

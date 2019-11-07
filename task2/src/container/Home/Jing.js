@@ -5,8 +5,7 @@ export default class All extends Component {
     constructor(){
         super();
         this.state={
-            data:[],
-            pages:[1,2,3,4,5,6,7,8,9,10]
+            data:[]
         }
     }
     componentDidMount(){
@@ -40,18 +39,8 @@ export default class All extends Component {
     render() {
         return (
             <div>
-                <div className='change'>
-                    {
-                        this.state.pages.map((item,idx)=>(
-                            <li num={item} onClick={()=>this.pgchange(item)}>
-                                {item}
-                            </li>    
-                            
-                        ))
-                    } 
-                </div>
                 <div>
-                    {this.state.data.map((item,idx)=>(
+                {this.state.data.map((item,idx)=>(
                             <ul className='mingzi'>
                                 <li num="item">
                                 <img src={item.author.avatar_url} alt=""
@@ -72,7 +61,18 @@ export default class All extends Component {
                                     style={{width:65,float:'left',height:40}}></div>
                                 </li>
                             </ul>
-                    ))}           
+                    ))}      
+                </div>
+                <div className='change'>
+                <ul>
+                        {
+                            [1,2,3,4,5,6,7,8,9,10].map((item)=>
+                                <li  onClick={()=>{return this.handleclick(item)}}>
+                                    <a>{item}</a>
+                                </li>
+                            )
+                        }
+                    </ul>
                 </div>
             </div>
         )
